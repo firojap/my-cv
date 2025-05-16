@@ -33,10 +33,17 @@ body {
 }
 
 
-body h2{
-  color:#005bb5;
-  text-decoration: underline;;
+body h2 {
+  background-color: #3498db;  /* navy-blue box */
+  color: #ffffff;             /* white text */
+  padding: 0.75rem 1rem;      /* space inside the box */
+  margin: 1.5rem 0;           /* vertical spacing around it */
+  border-radius: 4px;         /* optional rounded corners */
+  text-decoration: none;      /* remove underline */
+  display: block;             /* ensure it spans full width by default */
+  box-sizing: border-box;     /* include padding in its width */
 }
+
 
 body h3{
   color:#005bb5;
@@ -87,16 +94,17 @@ body h3{
 }
 
 .header-left h1 {
-  font-size: 30px;
+  font-size: 35px;
   color:white;
 }
 
 .header-left h4 {
-  margin: var(--spacing-sm) 0 var(--spacing);
-  font-size: 17px;
+  margin: 10px 0 25px; /* 25px bottom gap before .contact-info */
+  font-size: 18px;
   font-weight: 400;
-  color: #45aaf2;
+  color: #3498db;
 }
+
 
 .contact-info,
 .social-links {
@@ -125,13 +133,14 @@ body h3{
 }
 
 .header-right img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 100%;
-  border: 10px solid var(--color-border);
+  border: 5px solid #005bb5;  /* updated to your blue */
   margin-right: 20px;
 }
+
 
 /* =========================================
    Research Interests
@@ -147,14 +156,18 @@ body h3{
   overflow-wrap: anywhere;
 }
 
+/* Remove box styling for the Research Interests h2 */
 .research-section h2 {
-  margin: 0 0 var(--spacing);
+  background: none;               /* no background box */
+  color: #ffffff;                 /* white text */
+  text-decoration: none;          /* no underline */
+  padding: 0;                     /* reset any padding */
+  margin: 0 0 var(--spacing);     /* keep your bottom margin */
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color:white;
-  text-decoration: none;
 }
+
 
 
 .research-section p {
@@ -177,6 +190,7 @@ body h3{
   background-color: #ecf0f1;
   padding-left: 15px;
   padding-top: 15px;
+  padding-right: 15px;
 }
 
 
