@@ -173,6 +173,9 @@ body h3{
 .research-section p {
   margin: 0;
   line-height: 1.6;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 16.5px;
 }
 
 /* =========================================
